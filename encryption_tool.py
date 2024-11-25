@@ -11,6 +11,7 @@ import hashlib
 import os
 import argparse
 import zlib
+import getpass
 
 # Function to generate an RSA key pair
 def generate_rsa_key_pair():
@@ -155,10 +156,13 @@ def main():
     parser.add_argument('mode', choices=['encrypt', 'decrypt'], help="Mode of operation.")
     parser.add_argument('input_file', help="Input file to be processed.")
     parser.add_argument('output_file', help="Output file after processing.")
-    parser.add_argument('--password', help="Password for key derivation.", required=True)
+    parser.add_argument('--password', help="Password for key derivation.", required=False)
     parser.add_argument('--rsa-private-key', help="Path to RSA private key for decryption.", required=False)
     parser.add_argument('--rsa-public-key', help="Path to RSA public key for encryption.", required=False)
     args = parser.parse_args()
+
+    if not args.password:
+        args.password = getpass.getpass("Enter password: ")
 
     with open(args.input_file, 'rb') as f:
         data = f.read()

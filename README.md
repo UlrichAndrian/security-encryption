@@ -37,6 +37,26 @@ This project is a command-line tool for encrypting and decrypting files using AE
 
 If no RSA keys are specified, the tool will proceed with multi-layer encryption using the provided password.
 
+## GUI Application
+
+In addition to the command-line tool, this project includes a graphical user interface (GUI) built with Tkinter. The GUI allows users to easily encrypt and decrypt files without needing to use the command line.
+
+### GUI Features
+
+- **User-Friendly Interface**: Simple and intuitive interface for encryption and decryption tasks.
+- **File Selection Dialogs**: Easily select files and directories for encryption or decryption.
+- **Password Protection**: Secure your files with password-based encryption.
+
+### Running the GUI
+
+To run the GUI application, execute the following command:
+
+```bash
+python encryption_gui.py
+```
+
+Ensure that all dependencies are installed as listed in `requirements.txt`.
+
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
