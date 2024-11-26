@@ -1,2 +1,9 @@
 cryptography
+jwt
+Flask
 tkinter
+flask_limiter
+loguru
+pytest
+Flask-Security
+Sphinx

@@ -23,6 +23,11 @@ This project is a command-line tool for encrypting and decrypting files using AE
    pip install -r requirements.txt
    ```
 
+3. Run the application:
+   ```bash
+   python encryption_tool.py
+   ```
+
 ## Usage
 
 - **Encrypt a File**:
@@ -57,6 +62,13 @@ python encryption_gui.py
 
 Ensure that all dependencies are installed as listed in `requirements.txt`.
 
+## Testing
+
+To run the tests, use:
+```bash
+pytest
+```
+
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
